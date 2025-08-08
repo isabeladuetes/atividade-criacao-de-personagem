@@ -109,30 +109,3 @@ if (ouro <= 20) {
 if (classe === "Arqueira") {
     console.log("✨ O talento com arco e flecha está em você, grandes chances de ganhar");
 }
-
-//CAPÍTULO 2: Escolha Estratégica.
-console.log("🛡️ CAPÍTULO 2: Sobreviva ou morra tentando");
-
-// Escolha baseada em recursos.
-if (ouro >= 50) {
-    console.log("💰 Com ouro suficiente, " + nomePersonagem + " compra equipamentos melhores!");
-    forca += 5;
-    defesa += 3;
-    ouro -= 50;
-    console.log("Força e defesa aumentaram! Ouro restante: " + ouro);
-} else {
-    console.log("💔 Sem ouro suficiente, " + nomePersonagem + " deve confiar apenas em suas habilidades!");
-    console.log("A adversidade fortalece o espírito! Agilidade +2");
-    agilidade += 2;
-}
-
-// Sistema de recompensas narrativo
-if (experiencia >= 100) {
-    console.log("🎉 A sabedoria acumulada se manifesta! " + nomePersonagem + " sente-se mais poderoso!");
-    nivel++;
-    experiencia = 0;
-    vidaAtual = vidaMaxima; // Vida restaurada
-} else {
-    console.log("📊 " + nomePersonagem + " ainda busca mais conhecimento e experiência...");
-    console.log("Sabedoria atual: " + experiencia + "/100");
-}
