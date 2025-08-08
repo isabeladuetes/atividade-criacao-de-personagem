@@ -52,6 +52,8 @@ console.log(`Possui nível avançado? ${nivelAvancado}`);
 //PodeEnfrentarGuardiao → vidaSuficiente && (ataqueForte || nivelAvancado).
 let podeEnfrentarGuardiao = vidaSuficiente && (ataqueForte || nivelAvancado);
 console.log(`Pode enfrentar o guardião? ${podeEnfrentarGuardiao}`);
+console.log("");
+
 
 //Narrativa da Personagem (Introdução).
 console.log(`📃HISTÓRIA DA GUERREIRA: ${nome}`);
@@ -90,6 +92,10 @@ let localAtual = "Arena de jogos";
 let missaoAtual = "Vencer o jogos vorazes";
 console.log("");
 
+// PRÓLOGO - Conexão com o Nível 1
+console.log(`Após os eventos do ${localAtual}, nossa heroína ${nomePersonagem}`);
+console.log(`da classe ${classe} se depara com um novo desafio...`);
+console.log("");
 
 //CAPÍTULO 1: Condicionais Simples na narrativa.
 console.log("🎆 CAPÍTULO 1: Que comecem os jogos!");
@@ -110,7 +116,6 @@ if (classe === "Arqueira") {
     console.log("✨ O talento com arco e flecha está em você, grandes chances de ganhar");
 }
 console.log("");
-
 
 //CAPÍTULO 2: Escolha Estratégica.
 console.log("🛡️ CAPÍTULO 2: Sobreviva ou morra tentando");
@@ -162,3 +167,21 @@ if (vidaAtual <= 10) {
     poderInimigo -= (forca / 2);
     vidaAtual += 20; // Recupera um pouco de vida.
 }
+console.log("");
+
+console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
+console.log("");
+
+// EPÍLOGO - Resultado final
+if (poderInimigo <= 0) {
+    console.log(`🎉 VITÓRIA ÉPICA! ${nomePersonagem} Arrasou demais!`);
+    experiencia += 100;
+    combatesVencidos++;
+    console.log(`A lenda da ${localAtual}, ${nomePersonagem} cresce...`);
+} else {
+    console.log(`⚔️ A batalha foi muito trabalhosa, mas ${nomePersonagem} sobrevive a luta junto com o seu parceiro Peeata!`);
+}
+console.log("🥇 Juntos eles conseguem vencer os jogos pela primeira vez, em dupla, representando o distrito 12");
+
+console.log("");
+console.log("🏁 FIM DO CAPÍTULO - Aguarde a próxima aventura!");
