@@ -185,3 +185,17 @@ console.log("🥇 Juntos eles conseguem vencer os jogos pela primeira vez, em du
 
 console.log("");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde a próxima aventura!");
+
+//CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3.
+
+//NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS.
+// Inventário mágico - primeira coleção arcana
+let inventario = ["Arco e flecha", "Lança", "Roupa flamejante"];
+let aliados = ["Guerreiro Peeata Mellark", "Orientador Haymitch Abernathy", "Lançador Finnick Odair"];
+let inimigosEncontrados = ["Gale Hawthorne", "Presidente Snow", "Cato"];
+let salasCastelo = ["Quarto de ouro", "Sala de Banquete", "Sala de treinamento"];
+let tesouroColetado = [];
+
+console.log(`🏰 ${nomePersonagem} ADENTRA O CASTELO DOS ARRAYS DA CAPITAL`);
+console.log("Após vencer os jogos vorezes, a nossa heroína chega ao castela luxuoso da capital de Panem");
+console.log(`Inventário inicial: ${inventario.length} itens mágicos`);
