@@ -189,7 +189,7 @@ console.log("🏁 FIM DO CAPÍTULO - Aguarde a próxima aventura!");
 //CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3.
 
 //NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS.
-// Inventário mágico - primeira coleção arcana
+// Inventário mágico - primeira coleção arcana.
 let inventario = ["Arco e flecha", "Lança", "Roupa flamejante"];
 let aliados = ["Guerreiro Peeata Mellark", "Orientador Haymitch Abernathy", "Lançador Finnick Odair"];
 let inimigosEncontrados = ["Gale Hawthorne", "Presidente Snow", "Cato"];
@@ -199,3 +199,52 @@ let tesouroColetado = [];
 console.log(`🏰 ${nomePersonagem} ADENTRA O CASTELO DOS ARRAYS DA CAPITAL`);
 console.log("Após vencer os jogos vorezes, a nossa heroína chega ao castela luxuoso da capital de Panem");
 console.log(`Inventário inicial: ${inventario.length} itens mágicos`);
+console.log("");
+
+//CAPÍTULO 1: Finalmente chegamos à Capital!
+console.log("🗝️ CAPÍTULO 1: Finalmente chegamos à Capital!");
+
+//3.5.1. Declaração e inicialização.
+let pocoesEncontradas = ["Cura tudo", "Poção anti-fome", "Beleza extraordinária"];
+let armadilhasAtiradas = []; //Array vazio - será preenchido na aventura.
+
+//3.5.2. Acesso e modificação de elementos
+console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
+console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
+
+//Modificando elemento específico.
+inventario[0] = "Cura tudo e mais um pouco"; //Upgrade da poção!
+console.log(`✨ ${nomePersonagem} aprimorou uma poção!`);
+
+//3.5.3. Métodos de array fundamentais.
+inventario.push("Invisibilidade"); //Adiciona no final.
+console.log(`💍 Novo item adicionado! Inventário: ${inventario}`);
+
+let itemRemovido = inventario.pop(); //Remove do final.
+console.log(`📤 Item removido: ${itemRemovido}`);
+console.log(`🎒 Inventário atual: ${inventario}`);
+console.log("");
+
+//CAPÍTULO 2: Explorando a região.
+console.log("⚔️ CAPÍTULO 2: Explorando a região");
+
+//Explorando cada sala do castelo usando for tradicional.
+console.log(`🗺️ Começando a exploração das ${salasCastelo.length} salas`);
+
+for (let i = 0; i < salasCastelo.length; i++) {
+console.log(`🚪 Sala ${(i + 1)}: ${salasCastelo[i]}`);
+
+//Lógica diferente para cada sala baseada no índice
+if (i === 0) {
+    console.log(`📜 ${nomePersonagem} encontra itens revestidos por ouro!`);
+    experiencia += 50;
+} else if (i === 1) {
+    console.log("🥙 Há muitas comidas espalhadas pela mesa!");
+    tesouroColetado.push("Comer ajuda a ficar mais forte");
+} else {
+    console.log(`Ocorreu um acidante com os equipamentos!`);
+    vidaAtual -= 10; //Pequeno dano.
+ }
+}
+console.log(`📊 Exploração completa! XP: ${experiencia} | Vida: ${vidaAtual}`);
+console.log("");
