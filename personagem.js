@@ -82,7 +82,7 @@ let MoedasOuro = 100;
 //Novos atributos para batalha.
 let forca = 15;
 let defesa = 10;
-let agilidade = 12;
+let agilidade = 40;
 let combatesVencidos = 0;
 
 // Estado atual da história (continue de onde parou no Nível 1).
@@ -128,14 +128,37 @@ if (ouro >= 20) {
     agilidade += 2;
 }
 
-// Sistema de recompensas narrativo
+// Sistema de recompensas narrativo.
 if (experiencia >= 100) {
     console.log(`🎉 A sabedoria é a chave para o avanço! ${nomePersonagem} sente-se mais poderoso!`);
     nivel++;
     experiencia = 0;
-    vidaAtual = vidaMaxima; // Vida restaurada
+    vidaAtual = vidaMaxima; // Vida restaurada.
 } else {
     console.log(`🤔 ${nomePersonagem} ainda busca mais conhecimento e experiência para seu primeiro jogo`);
     console.log(`Sabedoria atual: ${experiencia}/100`);
 }
 console.log("");
+
+// CAPÍTULO 3: Os jogos com maior dificuldade começaram!
+console.log("⚔️ CAPÍTULO 3: Os jogos com maior dificuldade começaram!");
+let poderInimigo = 30;
+
+// Sistema de combate inteligente baseado na situação.
+if (vidaAtual <= 10) {
+    console.log(`🆘 Com pouca vida, ${nomePersonagem} usa sua arama desesperadamente!`);
+    console.log("Quase morrendo, da um golpe com todas sua força restante!");
+    poderInimigo -= (forca * 2);
+} else if (manaAtual >= 30 && classe === "Arqueira") {
+    console.log(`✨ ${nomePersonagem} canaliza todo seu poder e habilidade`);
+    console.log("🔥 Mulher em chamas devastadora!");
+    poderInimigo -= (forca + 60);
+    manaAtual -= 10;
+} else if (agilidade >= 15) {
+    console.log("🏃‍♂️ Com grande agilidade, executa um ataque certeiro e ganha do adiversário!");
+    poderInimigo -= forca;
+} else {
+    console.log("🛡️ Luta defensiva e calculada!");
+    poderInimigo -= (forca / 2);
+    vidaAtual += 20; // Recupera um pouco de vida.
+}
