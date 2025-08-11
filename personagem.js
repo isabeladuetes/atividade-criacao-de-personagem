@@ -225,8 +225,8 @@ console.log(`📤 Item removido: ${itemRemovido}`);
 console.log(`🎒 Inventário atual: ${inventario}`);
 console.log("");
 
-//CAPÍTULO 2: Explorando a região.
-console.log("⚔️ CAPÍTULO 2: Explorando a região");
+//CAPÍTULO 2: Explorando a região!
+console.log("⚔️ CAPÍTULO 2: Explorando a região!");
 
 //Explorando cada sala do castelo usando for tradicional.
 console.log(`🗺️ Começando a exploração das ${salasCastelo.length} salas`);
@@ -248,3 +248,73 @@ if (i === 0) {
 }
 console.log(`📊 Exploração completa! XP: ${experiencia} | Vida: ${vidaAtual}`);
 console.log("");
+
+//CAPÍTULO 3: Reunindo os aliados para a segunda edição dos jogos.
+console.log("🤝 CAPÍTULO 3: Reunindo os aliados para a segunda edição dos jogos");
+
+// Recrutando aliados com for tradicional.
+console.log(`🏹 ${nomePersonagem} convoca seus aliados para conversarem`);
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log(`⚡ Aliado ${(i + 1)}: ${aliado} se junta à missão de descobrir como ganhar o jogo novamente!`);
+
+//Cada posição no array determina habilidade especial.
+if (i === 0) { //Primeiro aliado - Guerreiro Peeata Mellark.
+    console.log(`🔮 Como ${aliado}, multiplica a força da equipe!`);
+    forca += 50;
+} else if (i === 1) { //Segundo aliado - Orientador Haymitch Abernathy.
+    console.log(`🛡️ Como ${aliado}, fortalece a sabedoria e a expeiência!`);
+    experiencia += 30;
+} else { //Lançador Finnick Odair.
+    console.log(`🏹 Como ${aliado}, aprimora as táticas de combate e melhora a agilidade!`);
+    agilidade += 40;
+ }
+}
+console.log(`🎖️ Equipe completa! Força ${forca} | Experiência: ${experiencia} | Agilidade: ${agilidade}`);
+console.log("");
+
+//CAPÍTULO 4: A batalha final de arrays
+console.log("🐉 CAPÍTULO 4: Confronto ma segunda edição de jogos forazes");
+
+//Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Pessoa do distrito 1", "Pessoa do distrito 10", "Pessoa do distrito 7"];
+let danoRecebido = [];
+
+console.log(`💀 ${nomePersonagem} enfrenta ${inimigosBatalha.length} inimigos épicos!`);
+
+//Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 30) + 10; // Dano entre 10 e 39
+
+console.log(`⚔️ Rodada ${(i + 1)} - Enfrentando: ${inimigo}`);
+console.log(`💥 ${nomePersonagem} causa ${dano} de dano!`);
+
+danoRecebido.push(dano); //Armazena dano para cálculos posteriores
+
+//Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+    console.log("💎 Primeira vitória! Cristais fragmentados concedem bônus!");
+    tesouroColetado.push("Fragmento de Cristal");
+} else if (i === 1) {
+    console.log(`🌑 Segunda batalha! A luta deixa cansaço extremo, mas ${nomePersonagem} resiste!`);
+    vidaAtual -= 15;
+} else {
+    console.log("🔥 Batalha final! O rival recua e morre! Vitória épica alcançada!");
+    experiencia += 100;
+    tesouroColetado.push("Ouro em grande quantidade");
+ }
+}
+
+//Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+    danoTotal += danoRecebido[i];
+    console.log(`📊 Rodada ${(i + 1)} - Dano: ${danoRecebido[i]}`);
+}
+
+console.log(`⚡ Dano total causado: ${danoTotal}`);
+console.log(`🏆 Tesouros coletados: ${tesouroColetado.length} itens épicos!`);
+console.log("");
+
