@@ -336,34 +336,17 @@ console.log("");
 console.log("🌟 A LENDA CONTINUA...");
 console.log(`Após ganhar a segunda edição dos jogos vorazes e conquistar o Castelo dos Arrays, ${nomePersonagem} foi transformada.`);
 console.log("Foi a primeira pessoa na história que conseguiu vencer duas edições seguidas dos jogos.");
-console.log("Cada loop executado havia forjado sua mente em algoritmos de ferro e determinação.");
-console.log("Os arrays sussurravam segredos ancestrais, revelando padrões ocultos da realidade.");
-console.log("Aliados admiravam sua capacidade de organizar caos em estruturas harmoniosas.");
-console.log("O inventário repleto de artefatos místicos brilhava com poder recém-descoberto.");
-console.log("Mas no horizonte, novas aventuras aguardavam o Mestre dos Códigos Arcanos.");
-console.log("Rumores falavam de torres onde funções aguardavam para serem dominadas.");
-console.log("E objetos legendários que guardariam os segredos da programação orientada.");
+console.log("A cada missão houve uma grande evolução da nossa arqueira, os loops fortalecerem sua mente.");
+console.log("Os arrays ajuradaram na hora de explorar seus caminhos.");
+console.log("Aliados admiravam sua capacidade de luta e habilidade, além de conseguir patrocinadores.");
+console.log("O inventário repleto de artefatos foi conquistado ao decorrer dessa missão.");
+console.log("Novas aventuras ainda vão começar, a captal vai pagar por essa exploração!");
+console.log(`${nomePersonagem} ainda vai procurar e conquistar sua vingança.`);
+console.log("Após a vitória dos jogos a rebelião começa agora.");
 console.log("A jornada estava longe do fim - era apenas o início de uma saga maior.");
-console.log("Pois " + nomePersonagem + " havia provado ser digno do título supremo:");
-console.log("⚡ ARQUI-MAGO DOS ALGORITMOS ETERNOS ⚡");
+console.log(`Pois ${nomePersonagem} é o símbolo da revolução:`);
+console.log("⚡ A GAROTA EM CHAMAS, O PASSÁRO DE FOGO! ⚡");
 
 console.log("");
 console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
 
-// EXEMPLO DE DESAFIO EXTRA: Sistema de Raridade
-let itensRaros = [];
-let itensComuns = [];
-                        
-// Classificando itens por raridade usando loops clássicos
-for (let i = 0; i < inventario.length; i++) {
-        let item = inventario[i];
-                            
-if (item.includes("Suprema") || item.includes("Flamejante")) {
-        itensRaros.push(item);
-    } else {
-        itensComuns.push(item);
-    }
-}
-                        
-console.log("💎 Itens Raros: " + itensRaros);
-console.log("🔧 Itens Comuns: " + itensComuns);
